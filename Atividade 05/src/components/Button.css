@@ -1,0 +1,23 @@
+.custom-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #522b8f;
+  color: #ffffff;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.custom-button:hover {
+  background: #2b124c;
+  transform: translateY(-2px);
+}
+
+.custom-button:disabled {
+  background: #c9c9c9;
+  cursor: not-allowed;
+}

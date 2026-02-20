@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2b124c, #522b8f);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form {
+  background: #f6f3f9;
+  padding: 45px;
+  border-radius: 18px;
+  width: 520px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+.form h1 {
+  text-align: center;
+  color: #2b124c;
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Inputs */
+.form input,
+.form textarea,
+.form select {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  background: white;
+  color: #333333;
+  transition: 0.3s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #777;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: #522b8f;
+  box-shadow: 0 0 0 2px rgba(82, 43, 143, 0.15);
+}
+
+.form textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Mensagens */
+.erro {
+  color: #b00020;
+  background: #ffe5e5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sucesso {
+  color: #1b5e20;
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
