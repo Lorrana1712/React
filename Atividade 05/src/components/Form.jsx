@@ -2,6 +2,24 @@ import { useState } from "react";
 import Button from "./Button";
 import "./Form.css";
 
+
+
+
+
+  // Função para limpar formulário
+  const resetForm = () => {
+    setNome("")
+    setSobrenome("")
+    setEmail("")
+    setIdade("")
+    setTelefone("")
+    setPais("")
+    setBio("")
+    setFuncao("Usuário")
+    setSenha("")
+    setTermos(false)
+  }
+
 const Form = () => {
 
   const [nome, setNome] = useState("");
@@ -144,9 +162,17 @@ const Form = () => {
           Aceitar termos
         </label>
 
-        <Button 
-          text="Cadastrar" 
+   
+        <Button
+          text="Enviar Cadastro"
+          type="submit"
           disabled={!termos}
+        />
+
+        <Button
+          text="Limpar"
+          type="button"
+          onClick={resetForm}
         />
 
       </form>
